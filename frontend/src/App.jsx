@@ -11,13 +11,12 @@ import HexViewer from './pages/HexViewer'
 import ProtectedRoute from './components/ProtectedRoute'
 import SessionWarning from './components/SessionWarning'
 import GoogleCallback from './pages/GoogleCallback'
-import { useEffect } from 'react'
-import { useNavigate, useLocation } from 'react-router-dom'
 import ResetPassword from './pages/ResetPassword'
 
 function App() {
   return (
     <BrowserRouter>
+      <SessionWarning />
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />

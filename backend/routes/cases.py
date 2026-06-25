@@ -35,9 +35,7 @@ def serialize_case(case):
 
 @router.get("/")
 async def get_cases(current_user=Depends(get_current_user)):
-    all_cases = await db["cases"].find({}).to_list(100)
     cases = await db["cases"].find({"user_id": current_user["_id"]}).to_list(100)
-    print(f"ALL CASES: {len(all_cases)}, USER CASES: {len(cases)}, USER_ID: {current_user['_id']}")
     return [serialize_case(c) for c in cases]
 
 @router.post("/")
