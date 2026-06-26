@@ -98,7 +98,6 @@ function Settings() {
           <nav className="flex flex-col">
             {[
               { label: t.overview, icon: 'dashboard', path: '/dashboard' },
-              { label: t.fileRecovery, icon: 'settings_backup_restore', path: '/dashboard' },
               { label: t.hexViewer, icon: 'memory', path: '/hex-viewer' },
               { label: t.auditLog, icon: 'history', path: '/audit-log' },
             ].map((item) => (

@@ -167,7 +167,6 @@ function Dashboard() {
               <span className="text-xs uppercase tracking-widest" style={{ fontFamily: 'JetBrains Mono, monospace' }}>{t.overview}</span>
             </a>
             {[
-              { label: t.fileRecovery, icon: 'settings_backup_restore', path: '/dashboard' },
               { label: t.hexViewer, icon: 'memory', path: '/hex-viewer' },
               { label: t.auditLog, icon: 'history', path: '/audit-log' },
             ].map(item => (
