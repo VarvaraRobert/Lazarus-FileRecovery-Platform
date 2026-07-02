@@ -1,4 +1,4 @@
-# Lazarus — Digital Forensics & File Recovery Platform
+# Lazarus - Digital Forensics & File Recovery Platform
 
 A web-based digital forensics platform for recovering deleted files from disk images using file carving techniques. Built as a bachelor's thesis project at Babeș-Bolyai University, FSEGA (2026).
 
